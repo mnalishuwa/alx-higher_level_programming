@@ -1,8 +1,19 @@
 #include "lists.h"
 
+/**
+ * check_cycle - checks if a linked list has a cycle
+ * Description: traverses a singly linked list and checks
+ * if the current node being visited has been visited before
+ * update check cycle to use O(n) algorithm
+ *
+ * @list: pointer to the head of the list
+ *
+ * Return: 1 if cycle exists and 0 otherwise
+ */
+
 int check_cycle(listint_t *list)
 {
-	listint *current_node = list, *next_node = list;
+	listint_t *current_node = list, *next_node = list;
 
 	while (next_node != NULL)
 	{
