@@ -5,4 +5,4 @@ for x in range(10):
         if (x + y) < (9 + 8):
             print(x, y, sep="", end=", ")
             continue
-        print(x, y, sep="")
+        print("{}{}".format(x, y))
