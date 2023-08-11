@@ -6,8 +6,7 @@ if __name__ == "__main__":
     a = 10
     b = 5
 
-    # print("{} + {} = {}".format(a, b, calc.add(a, b)))
-    print(f"{a:d} + {b:d} = {calc.add(a, b):d}")
-    print(f"{a:d} - {b:d} = {calc.sub(a, b):d}")
-    print(f"{a:d} * {b:d} = {calc.mul(a, b):d}")
-    print(f"{a:d} / {b:d} = {calc.div(a, b):d}")
+    print("{} + {} = {}".format(a, b, calc.add(a, b)))
+    print("{} - {} = {}".format(a, b, calc.sub(a, b)))
+    print("{} * {} = {}".format(a, b, calc.mul(a, b)))
+    print("{} / {} = {}".format(a, b, calc.div(a, b)))
