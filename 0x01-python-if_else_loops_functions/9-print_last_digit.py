@@ -9,6 +9,6 @@ def print_last_digit(number):
 
     remainder = number - ((number // divisor) * divisor)
     if remainder < 0:
-        remainder *= 1
-    print(remainder)
+        remainder *= -1
+    print(remainder, end="")
     return remainder
