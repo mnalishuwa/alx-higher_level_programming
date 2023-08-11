@@ -3,6 +3,6 @@
 if __name__ == "__main__":
     import sys
     result = 0
-    for each_arg in sys.argv:
-        result += int(each_arg)
+    for arg_index in range(1, len(sys.argv)):
+        result += int(sys.argv[arg_index])
     print(result)
