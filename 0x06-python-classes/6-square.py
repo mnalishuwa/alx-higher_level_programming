@@ -48,7 +48,7 @@ class Square:
         return self.__position
 
     @position.setter
-    def position(self, value: tuple[int, int] = (0, 0)) -> None:
+    def position(self, value):
         """
         Set square postion
         Args:
