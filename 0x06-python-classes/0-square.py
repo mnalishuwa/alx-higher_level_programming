@@ -5,5 +5,6 @@
 
 
 class Square:
+
     """Square Class Base Template"""
     pass
