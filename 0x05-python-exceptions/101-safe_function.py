@@ -8,4 +8,4 @@ def safe_function(fct, *args):
         return result
     except Exception as error_message:
         print("Exception: {}\n".format(error_message))
-        return  None
+        return None
