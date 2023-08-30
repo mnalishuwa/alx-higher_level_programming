@@ -29,7 +29,7 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        Get size method
+        Set size method
 
         Args:
             value: int
