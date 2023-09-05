@@ -13,6 +13,8 @@ class Rectangle:
 
     Methods:
         __init__(self, width, height)
+        __str__(self)
+        __repr__(self)
         height(self)
         height(self, value)
         width(self)
@@ -48,6 +50,13 @@ class Rectangle:
             if row != rows - 1 and cols != 0:
                 str_rectangle += "\n"
         return str_rectangle
+
+    def __repr__(self):
+        """
+        Return printable representation of object
+        """
+        cls_name = self.__class__.__name__
+        return "{}({}, {})".format(cls_name, self.width, self.height)
 
     @property
     def height(self):
