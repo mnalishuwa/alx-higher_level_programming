@@ -1,0 +1,26 @@
+"""
+Return the sum of two integers
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(0, 0)
+0
+>>> add_integer(-8, -3)
+-11
+>>> add_integer(33.3, 5.3)
+38
+>>> add_integer(5, 7)
+12
+>>> add_integer(76895558900, 54500000000)
+131395558900
+>>> add_integer(-76895558900, -54500000000)
+-131395558900
+>>> add_integer(-76895558900, "hello")
+Traceback (most recent call last):
+	  ...
+TypeError: b must be an integer
+>>> add_integer("hello", 50)
+Traceback (most recent call last):
+	  ...
+TypeError: a must be an integer
+
+"""
