@@ -1,0 +1,39 @@
+Import function
+text_indentation = __import__('5-text_indentation').text_indentation
+
+Test no arguments:
+    >>> text_indentation()
+    Traceback (most recent call last)
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Test invalid arguments:
+    >>> text_indentation(100)
+    Traceback (most recent call last)
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation("100", "hello")
+    Traceback (most recent call last)
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+Test empty string:
+    >>> text_indentation("")
+
+Test valid string:
+    >>> text_indentation("Hello there world. How are you? The following: bread, butter, eggs, are good foods")
+    Hello there world.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+    The following:
+    <BLANKLINE>
+    bread, butter, eggs, are good foods
+
+    >>> text_indentation("Hello there world.    ")
+    Hello there world.
+    <BLANKLINE>
+
+    >>> text_indentation("\n")
+    <BLANKLINE>
