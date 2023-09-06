@@ -1,0 +1,123 @@
+"""
+Divide a matrix by a given number
+
+Import the function
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test no arguments
+>>> matrix_divided()
+Traceback (most recent call last):
+    ...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Test 1 argument
+>>> matrix_divided("matrix")
+Traceback (most recent call last):
+    ...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Test 2 invalid arguments
+>>> matrix_divided(8, "x")
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 1st argument invalid
+>>> matrix_divided(8, 10)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 1st argument invalid, inner items not lists
+>>> matrix_divided([8, 9, 10], 9)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 1st argument invalid, some inner items valid some invalid
+>>> matrix_divided([[8, 9, 10], "x"], 9)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 1st argument invalid, inner list items not numbers
+>>> matrix_divided([[8, 9, 10], [8, 9, "x"]], 9)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test 1st argument invalid, rows not the same size
+>>> matrix_divided([[8, 9, 10], [8, 9]], 9)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
+
+Test 2nd argument invalid
+>>> matrix_divided([[8, 9, 10], [8, 9, 45]], "9")
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
+
+Test 2nd argument invalid, division by zero
+>>> matrix_divided([[8, 9, 10], [8, 9, 45]], 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
+
+Test both arguments valid, all integers
+>>> matrix_divided([[8, 9, 10], [8, 9, 45]], 9)
+[[0.89, 1.0, 1.11], [0.89, 1.0, 5.0]]
+
+Test both arguments valid, all integers, signed div
+>>> matrix_divided([[8, 9, 10], [8, 9, 45]], -9)
+[[-0.89, -1.0, -1.11], [-0.89, -1.0, -5.0]]
+
+Test both arguments valid, all integers, signed matrix
+>>> matrix_divided([[-8, -9, -10], [-8, -9, -45]], 9)
+[[-0.89, -1.0, -1.11], [-0.89, -1.0, -5.0]]
+
+Test both arguments valid, all integers, signed & unsigned matrix entries
+>>> matrix_divided([[-8, 90, 10], [8, 9, -45]], 9)
+[[-0.89, 10.0, 1.11], [0.89, 1.0, -5.0]]
+
+Test both arguments valid, all integers, signed & unsigned
+>>> matrix_divided([[-8, 90, 10], [8, 9, -45]], -9)
+[[0.89, -10.0, -1.11], [-0.89, -1.0, 5.0]]
+
+Test both arguments valid, float div
+>>> matrix_divided([[8, 90, 10], [8, 9, 45]], 10.5)
+[[0.76, 8.57, 0.95], [0.76, 0.86, 4.29]]
+
+Test both arguments valid, float matrix, float div
+>>> matrix_divided([[8.05, 90.75, 10.0], [8, 9.5, 45]], 10.5)
+[[0.77, 8.64, 0.95], [0.76, 0.9, 4.29]]
+
+Test both arguments valid, float matrix
+>>> matrix_divided([[8.05, 90.75, 10.91], [8.45, 9.5, 45.7]], 10)
+[[0.81, 9.07, 1.09], [0.84, 0.95, 4.57]]
+
+Test both arguments valid, "inf" div
+>>> matrix_divided([[8.05, 90.75, 10.91], [8.45, 9.5, 45.7]], float("inf"))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+Test both arguments valid, "inf" div, "inf" matrix entries
+>>> matrix_divided([[float("inf"), 90.75, 10.91], [8.45, 9.5, 45.7]], float("inf"))
+[[nan, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+Test both arguments valid, "inf" matrix entries
+matrix_divided([[float("inf"), 90.75, 10.91], [8.45, 9.5, 45.7]], 10)
+[[inf, 9.07, 1.09], [0.84, 0.95, 4.57]]
+
+Test both arguments valid, div is nan
+>>> matrix_divided([[8, 90.75, 10.91], [8.45, 9.5, 45.7]], float("nan"))
+[[nan, nan, nan], [nan, nan, nan]]
+
+Test both arguments valid, matrix & div is nan
+>>> matrix_divided([[float("nan"), 90.75, 10.91], [8.45, 9.5, 45.7]], float("nan"))
+[[nan, nan, nan], [nan, nan, nan]]
+
+Test both arguments valid, matrix has nan
+matrix_divided([[float("nan"), 90.75, 10.91], [8.45, float("nan"), 45.7]], 10)
+[[nan, 9.07, 1.09], [0.84, nan, 4.57]]
+
+"""
