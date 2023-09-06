@@ -1,26 +1,65 @@
 """
 Return the sum of two integers
 
+Import the add function
 >>> add_integer = __import__('0-add_integer').add_integer
+
+Test add 0
 >>> add_integer(0, 0)
 0
+
+Test add negative numbers
 >>> add_integer(-8, -3)
 -11
+
+Test add floats
 >>> add_integer(33.3, 5.3)
 38
+
+Test add positive numbers
 >>> add_integer(5, 7)
 12
+
+Test add very large positive numbers
 >>> add_integer(76895558900, 54500000000)
 131395558900
+
+Test add very large negative number
 >>> add_integer(-76895558900, -54500000000)
 -131395558900
+
+Test add number with 2nd arg string
 >>> add_integer(-76895558900, "hello")
 Traceback (most recent call last):
 	  ...
 TypeError: b must be an integer
+
+Test add number with 1st arg string
 >>> add_integer("hello", 50)
 Traceback (most recent call last):
 	  ...
 TypeError: a must be an integer
+
+Test add single argument
+>>> add_integer(10)
+108
+
+Test missing arguments
+>>> add_integer()
+Traceback (most recent call last):
+	  ...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test overflow error
+>>> add_integer(float("inf"), 1)
+Traceback (most recent call last)
+	  ...
+OverflowError: cannot convert float infinity to integer
+
+Test nan values
+>>> add_integer(float("nan"))
+Traceback (most recent call last)
+	  ...
+ValueError: cannot convert float NaN to integer
 
 """
