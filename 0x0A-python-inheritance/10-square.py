@@ -21,14 +21,10 @@ class Square(Rectangle):
     def __init__(self, size):
         """
         Constructor method
+
+        Args:
+        size
         """
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(self.__size, self.__size)
-
-    def __str__(self):
-        """
-        Return string representation of Rectangle instance
-        """
-        cls_name = self.__class__.__bases__[0].__name__
-        return str("[{}] {}/{}".format(cls_name, self.__size, self.__size))
