@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Square class
+Square module
 """
 
 
@@ -9,15 +9,17 @@ Rectangle = __import__('9-rectangle.py').Rectangle
 
 
 class Square(Rectangle):
+
     """
-    square class
+    Square class
 
     Attributes:
 
     Methods:
-        __init__
-        area
+        __init__(self, size)
+        area(self)
     """
+
     def __init__(self, size):
         """
         Constructor method
