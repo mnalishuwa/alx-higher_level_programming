@@ -1,3 +1,72 @@
-Import module
+Import Module
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
+Test ints greater than 0:
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", 23)
+
+Test area() error:
+     >>> bg = BaseGeometry()
+     >>> bg.area()
+     Traceback (most recent call last):
+     ...
+     Exception: area() is not implemented
+
+Test invalid values:
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", -10)
+     Traceback (most recent call last):
+     ...
+     ValueError: x must be greater than 0
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", 0)
+     Traceback (most recent call last):
+     ...
+     ValueError: x must be greater than 0
+
+Test invalid args:
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", None)
+     Traceback (most recent call last):
+     ...
+     TypeError: x must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", "29")
+     Traceback (most recent call last):
+     ...
+     TypeError: x must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", "50")
+     Traceback (most recent call last):
+     ...
+     TypeError: x must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", [5, 20, 25])
+     Traceback (most recent call last):
+     ...
+     TypeError: x must be an integer
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x", True)
+     Traceback (most recent call last):
+     ...
+     TypeError: x must be an integer
+
+Test invalid number of arguments:
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator()
+     Traceback (most recent call last):
+     ...
+     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("x")
+     Traceback (most recent call last):
+     ...
+     TypeError: integer_validator() missing 1 required positional argument: 'value'
