@@ -45,5 +45,4 @@ class Student:
         Return:
             dict
         """
-        return {attr: getattr(self, attr) for attr in dir(self)
-                if callable(getattr(self, attr)) and not attr.startswith("__")}
+        return self.__dict__
