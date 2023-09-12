@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+Module 0-read_file
+
+Function reads and prints contents from txt file
+"""
+
 
 def read_file(filename=""):
 
