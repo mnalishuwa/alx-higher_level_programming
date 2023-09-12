@@ -1,0 +1,10 @@
+*~
+*#
+main
+*.out
+*main*
+*.txt
+*.bak
+tests
+__pycache__
+
