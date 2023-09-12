@@ -9,11 +9,20 @@ Rectangle class inherits from BaseGeometry
 """
 
 
-Rectangle = __import__('9-rectangle.py').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Square class base blueprint"""
+    """
+    Square class base blueprint
+
+    Attributes:
+        size (int) - +ve square side
+
+    Methods:
+        __init__(self, size)
+        __str__(self)
+    """
 
     def __init__(self, size):
         """
