@@ -13,16 +13,8 @@ Rectangle = __import__('9-rectangle.py').Rectangle
 
 
 class Square(Rectangle):
-    """
-    Square class base blueprint
+    """Square class base blueprint"""
 
-    Attributes:
-    size (int) - +ve square side
-
-    Methods:
-    __init__(self, size)
-    __str__(self)
-    """
     def __init__(self, size):
         """
         Constructor method
@@ -39,3 +31,15 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(self.__size, self.__size)
+
+    def __str__(self):
+        """
+        Create and return string representation of instance
+
+        Args:
+
+        Return:
+            str
+        """
+        cls_name = self.__class__.__bases__[0].__name__
+        return str("[{}] {}/{}".format(cls_name, self.__size, self.__size))
