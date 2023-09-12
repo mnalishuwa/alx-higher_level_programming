@@ -17,17 +17,17 @@ class Square(Rectangle):
     Square Class Base Blueprint
 
     Attributes:
-        size (int): +ve square side
+    size (int): +ve square side
 
     Methods:
-        __init__(self, size)
-        __str__(self)
+    __init__(self, size)
+    __str__(self)
     """
     def __init__(self, size):
         """
         Constructor method
 
-        Arguments:
+        Args:
             size (int): +ve square side
 
         Attributes:
