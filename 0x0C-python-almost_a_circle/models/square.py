@@ -8,7 +8,7 @@ Rectangle class inherits from Base
 """
 
 
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):

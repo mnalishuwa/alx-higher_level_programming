@@ -3,6 +3,7 @@
 
 """
 Base module docs
+Base class definition for polygons
 """
 
 
