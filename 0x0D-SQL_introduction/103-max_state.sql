@@ -5,7 +5,7 @@ WITH temprank AS
 	     OVER(PARTITION BY state ORDER BY value DESC)
 	     AS ranks
      FROM
-	hbtn_0c_0.temperatures)
+	temperatures)
 
 SELECT DISTINCT
        state,
@@ -15,3 +15,5 @@ FROM
 WHERE
 	ranks=1
 ORDER BY state;
+
+-- WITH temprank AS (SELECT *, RANK() OVER(PARTITION BY state ORDER BY value DESC) AS ranks FROM hbtn_0c_0.temperatures) SELECT DISTINCT state, value AS max_temp FROM temprank WHERE ranks=1 ORDER BY state;
