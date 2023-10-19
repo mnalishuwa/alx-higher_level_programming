@@ -4,4 +4,4 @@ UPDATE
 SET
 	score=10
 WHERE
-	id=3;
+	name='Bob';
