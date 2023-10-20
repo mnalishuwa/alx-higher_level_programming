@@ -10,4 +10,4 @@ ON
 	id = genre_id
 GROUP BY
 	name
-ORDER BY number_of_shows desc;
+ORDER BY number_of_shows DESC;
