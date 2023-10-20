@@ -1,7 +1,7 @@
 --  lists all genres from hbtn_0d_tvshows and displays the number of shows
 SELECT
 	name,
-	count(id) as number_of_shows
+	count(id) AS number_of_shows
 FROM
 	tv_genres
 LEFT JOIN
