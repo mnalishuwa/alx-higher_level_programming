@@ -1,13 +1,13 @@
 --  lists all genres from hbtn_0d_tvshows and displays the number of shows
 SELECT
-	name,
+	name AS genre,
 	COUNT(*) AS number_of_shows
 FROM
 	tv_genres
 LEFT JOIN
 	tv_show_genres
 ON
-	id = genre_id
+	tv_genres.id = tv_show_genres.genre_id
 GROUP BY
 	name
 ORDER BY number_of_shows DESC;
