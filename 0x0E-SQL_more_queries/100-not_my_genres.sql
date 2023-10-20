@@ -17,5 +17,5 @@ WHERE name NOT IN (
 	ON
 		tv_show_genres.genre_id = tv_genres.id
 	WHERE
-		tv_shows.title = 'Dexter'
-	ORDER BY name ASC);
+		tv_shows.title = 'Dexter');
+ORDER BY name ASC
