@@ -10,5 +10,5 @@ function factorial (n) {
 if (process.argv.length > 2 && isNaN(Number(process.argv[2]))) {
   console.log(Number(process.argv[2]));
 } else {
-  factorial(Math.floor(Number(process.argv[2])));
+  console.log(factorial(Math.floor(Number(process.argv[2]))));
 }
