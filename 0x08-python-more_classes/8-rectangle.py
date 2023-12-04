@@ -2,6 +2,10 @@
 
 """
 Rectangle class definition
+Author: Mukwa Nalishuwa
+Date Created:
+Date Modified:
+Email:
 """
 
 
