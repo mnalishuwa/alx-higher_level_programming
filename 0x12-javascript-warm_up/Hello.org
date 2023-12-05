@@ -1,0 +1,41 @@
+* First Heading
+  Contents and *details*
+** Sub-Heading
+   Sub-heading contents\
+   Orgmode allows for richtext editing and markup, the formatting\
+   is retained when the org document content is exported to another\
+   document such as a HTML.
+
+   | Name      | Age | Uses Emacs |
+   | David     |  37 | Yes        |
+   | Alexander |  30 | Yes        |
+   |           |     |            |
+
+* DONE Another Heading
+  Here is a /link/ to the [[https://orgmode.org/][Org Mode home page]]
+
+* TODO Second Heading
+  List Support
+  - First Item
+  - Second Item
+  - Third Item
+
+  Numbered List
+  1. First Item
+  2. Second Item
+  3. Third Item
+
+  Checklists
+  - [X] First Item
+  - [X] Second Item
+  - [ ] Third Item
+
+* Source Blocks
+  #+begin_src emacs-lisp
+
+  (defun my-elisp-func ()
+   (message "Hello!"))
+
+  #+end_src
+
+*
