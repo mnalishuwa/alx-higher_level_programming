@@ -1,0 +1,241 @@
+#+Title: ALX - November Backlog Catchup
+#+author: Mukwa Nalishuwa
+#+date: 2023-12-05
+
+#+TODO: TODO(t) INPROGRESS(i) | DONE(d)
+
+* ACTIVE
+** Current Projects
+*** First Deadline
+***** TODO  0x0E. Web stack debugging #1
+SCHEDULED: <2023-12-12 Tue> DEADLINE: <2023-12-08 Fri>
+****** Tasks
+******* TODO Mandatory Tasks
+1. Review Resources
+   - [ ] [[https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html][Introduction to HTTP]]
+   - [ ] [[https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies][Using HTTP Cookies]]
+2. Create Repo and README file
+   - [ ] Create Github repo/folder
+   - [ ] Create and upload README.md to project repo/folder
+3. 0-body_size.sh
+4. 1-body.sh
+5. 2-delete.sh
+6. 3-methods.sh
+7. 4-header.sh
+8. 5-post_params.sh
+9. 6-peak.py
+******* TODO Optional Tasks
+***** TODO 0x03. AirBnB clone - Deploy static
+DEADLINE: <2023-12-09 Sat> SCHEDULED: <2023-12-12 Tue>
+***** TODO  0x01. Fix my code
+DEADLINE: <2023-12-20 Wed> SCHEDULED: <2023-12-18 Mon>
+***** TODO 0x10. HTTPS SSL
+DEADLINE: <2023-12-08 Fri> SCHEDULED: <2023-12-10 Sun>
+*** Overdue
+**** Second Deadline
+**** Third Deadline
+***** TODO 0x0F. Python - Object-relational mapping [%]
+DEADLINE: <2023-11-20 Mon> SCHEDULED: <2023-12-10 Sun>
+****** Tasks [%]
+******* TODO Mandatory Tasks [5%]
+1. [X] Review Resources [100%]
+   - [X] [[https://www.fullstackpython.com/object-relational-mappers-orms.html][Full Stack Python - Object Relational Mappers]]
+   - [X] [[https://mysqlclient.readthedocs.io/][mysqlclient/MySQLdb documentation]]
+   - [X] [[https://www.mikusa.com/python-mysql-docs/index.html][Python MySQL Documentation]]
+   - [X] [[https://docs.sqlalchemy.org/en/13/orm/tutorial.html][Object Relational Tutorial]]
+   - [X] [[https://github.com/PyMySQL/mysqlclient][mysqlclient]] Github page
+   - [X] [[https://www.youtube.com/watch?v=woKYyhLCcnU][Introduction to SQLAlchemy]]
+   - [X] [[https://www.youtube.com/playlist?list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW][Flask SQLAlchemy Tutorial]]
+   - [X] [[http://alextechrants.blogspot.com/2013/11/10-common-stumbling-blocks-for.html][10 common stumbling blocks for SQLAlchemy newbies]]
+   - [X] [[https://www.pythonsheets.com/notes/python-sqlalchemy.html][Python SQLAlchemy Cheatsheet]]
+   - [X] [[https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/][SQLAlchemy ORM Tutorial for Python Developers]]
+   - [X] [[https://overiq.com/sqlalchemy-101/][SQLAlchemy Tutorial]]
+   - [X] [[https://realpython.com/python-virtual-environments-a-primer/][Python Virtual Environments: A primer]]
+2. [ ] Create Repo and README file [0%]
+   - [ ] Create Github repo/folder
+   - [ ] Create and upload README.md to project repo/folder
+3. [ ] Technical requirements [0%]
+   - [ ] Install and activate python venv
+   - [ ] Install MySQL 8.0
+   - [ ] Install MySQLdb module v2.0.x
+   - [ ] Install SQLAlchemy module version 1.4.x
+4. [ ] Write a script that lists all states from the database hbtn_0e_0_usa [0%]
+   - [ ] script should take 3 arguments: mysql username,
+     mysql password and database name
+   - [ ] Import MySQLdb
+   - [ ] script should connect to a MySQL server running on localhost
+     at port 3306
+   - [ ] Results must be sorted in ascending order by states.id
+   - [ ] Code should not be executed when imported
+   - [ ] file 0-select_states.py
+5. [ ] Write a script that lists all states with a name starting with N
+   from the database hbtn_0e_0_usa [0%]
+   - [ ] script should take 3 arguments: mysql username,
+     mysql password and database name
+   - [ ] Import MySQLdb
+   - [ ] script should connect to a MySQL server running on localhost
+     at port 3306
+   - [ ] Results must be sorted in ascending order by states.id
+   - [ ] Code should not be executed when imported
+   - [ ] file 1-filter_states.py
+6. [ ] Write a script that takes in an argument and displays all values
+   in the states table of hbtn_0e_0_usa where name matches the argument.
+7. [ ] write a script that takes in arguments and displays all values in the
+   states table of hbtn_0e_0_usa where name matches the argument.
+   But this time, write one that is safe from MySQL injections!
+8. [ ] Write a script that lists all cities from the database hbtn_0e_4_usa
+9. [ ] Write a script that takes in the name of a state as an argument and
+   lists all cities of that state, using the database hbtn_0e_4_usa
+10. [ ] Write a python file that contains the class definition of a State
+    and an instance Base = declarative_base()
+11. [ ] Write a script that lists all State objects from the database hbtn_0e_6_usa
+12. [ ] Write a script that prints the first State object from the
+    database hbtn_0e_6_usa
+13. [ ] Write a script that lists all State objects that contain the letter
+    a from the database hbtn_0e_6_usa
+14. [ ] Write a script that prints the State object with the name passed as
+    argument from the database hbtn_0e_6_usa
+15. [ ] Write a script that adds the State object “Louisiana”
+    to the database hbtn_0e_6_usa
+16. [ ] Write a script that changes the name of a State object from
+    the database hbtn_0e_6_usa
+17. [ ] Write a script that deletes all State objects with a name containing
+    the letter a from the database hbtn_0e_6_usa
+18. [ ] Write a Python file similar to model_state.py named model_city.py
+    that contains the class definition of a City
+******* TODO Optional Tasks [0%]
+1. [ ] Improve the files model_city.py and model_state.py, and save them
+   as relationship_city.py and relationship_state.py:
+2. [ ] Write a script that lists all State objects,
+   and corresponding City objects, contained in the database hbtn_0e_101_usa
+3. [ ] Write a script that lists all City objects from the database hbtn_0e_101_usa
+***** TODO 0x01. AirBnB clone - Web static [%]
+DEADLINE: <2023-10-23 Mon> SCHEDULED: <2023-12-11 Mon>
+****** Tasks
+******* Madatory Tasks [0%]
+- [ ] Upload project files to github
+- [ ] Request for new correction
+- [ ] Ask for Sadson for peer review
+******* Optional Tasks
+***** TODO  0x02. AirBnB clone - MySQL [%]
+DEADLINE: <2023-11-23 Thu> SCHEDULED: <2023-12-11 Mon>
+****** Tasks
+******* TODO Mandatory Tasks [%]
+1. [ ] Review Resources [%]
+   - [ ] [[https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html][Introduction to HTTP]]
+   - [ ] [[https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies][Using HTTP Cookies]]
+2. [ ] Create Repo and README file [%]
+   - [ ] Create Github repo/folder
+   - [ ] Create and upload README.md to project repo/folder
+3. [ ] 0-body_size.sh
+4. [ ] 1-body.sh
+5. [ ] 2-delete.sh
+6. [ ] 3-methods.sh
+7. [ ] 4-header.sh
+8. [ ] 5-post_params.sh
+9. [ ] 6-peak.py
+******* TODO Optional Tasks [%]
+
+***** TODO 0x10. Python - Network #0
+DEADLINE: <2023-11-30 Thu> SCHEDULED: <2023-12-10 Sun>
+****** Tasks
+******* TODO Mandatory Tasks
+1. Review Resources
+   - [ ] [[https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html][Introduction to HTTP]]
+   - [ ] [[https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies][Using HTTP Cookies]]
+2. Create Repo and README file
+   - [ ] Create Github repo/folder
+   - [ ] Create and upload README.md to project repo/folder
+3. 0-body_size.sh
+4. 1-body.sh
+5. 2-delete.sh
+6. 3-methods.sh
+7. 4-header.sh
+8. 5-post_params.sh
+9. 6-peak.py
+******* TODO Optional Tasks
+1. 100-status_code.sh
+2. 101-post_json.sh
+***** TODO  0x11. Python - Network #1 [%]
+SCHEDULED: <2023-12-11 Mon> DEADLINE: <2023-12-01 Fri>
+****** Tasks [0%]
+******* TODO Mandatory Tasks [0%]
+1. [ ] Review Resources
+   - [ ] [[https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html][Introduction to HTTP]]
+   - [ ] [[https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies][Using HTTP Cookies]]
+2. [ ] Create Repo and README file
+   - [ ] Create Github repo/folder
+   - [ ] Create and upload README.md to project repo/folder
+3. [ ] 0-body_size.sh
+4. [ ] 1-body.sh
+5. [ ] 2-delete.sh
+6. [ ] 3-methods.sh
+7. [ ] 4-header.sh
+8. [ ] 5-post_params.sh
+9. [ ] 6-peak.py
+******* TODO Optional Tasks [0%]
+1. [ ] 100-status_code.sh
+2. [ ] 101-post_json.sh
+***** TODO  0x0F. Load balancer
+SCHEDULED: <2023-12-11 Mon> DEADLINE: <2023-12-04 Mon>
+****** Tasks
+******* TODO Mandatory Tasks
+1. Review Resources
+   - [ ] [[https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html][Introduction to HTTP]]
+   - [ ] [[https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies][Using HTTP Cookies]]
+2. Create Repo and README file
+   - [ ] Create Github repo/folder
+   - [ ] Create and upload README.md to project repo/folder
+3. 0-body_size.sh
+4. 1-body.sh
+5. 2-delete.sh
+6. 3-methods.sh
+7. 4-header.sh
+8. 5-post_params.sh
+9. 6-peak.py
+******* TODO Optional Tasks
+* BACKLOG
+* ADMIN & PLANNING
+*** DONE Update Project Tuesday [100%]
+CLOSED: [2023-12-05 Tue 21:55] DEADLINE: <2023-12-05 Tue> SCHEDULED: <2023-12-05 Tue>
+1. [X] Review all tasks and update completion status for all tasks as necessary
+    at the end of each day
+2. [X] Move all projects to appear under correct
+   deadline (i.e. first deadline, overdue) section at end or each day
+3. [X] Add priority tasks for next three days
+*** TODO Update Project Wednesday [0%]
+DEADLINE: <2023-12-06 Wed> SCHEDULED: <2023-12-06 Wed>
+1. [ ] Review all tasks and update completion status for all tasks as necessary
+    at the end of each day
+2. [ ] Move all projects to appear under correct
+   deadline (i.e. first deadline, overdue) section at end or each day
+*** TODO Update Project Thursday [0%]
+DEADLINE: <2023-12-07 Thu> SCHEDULED: <2023-12-07 Thu>
+1. [ ] Review all tasks and update completion status for all tasks as necessary
+    at the end of each day
+2. [ ] Move all projects to appear under correct
+   deadline (i.e. first deadline, overdue) section at end or each day
+*** TODO Update Project Friday [0%]
+DEADLINE: <2023-12-08 Fri> SCHEDULED: <2023-12-08 Fri>
+1. [ ] Review all tasks and update completion status for all tasks as necessary
+    at the end of each day
+2. [ ] Move all projects to appear under correct
+   deadline (i.e. first deadline, overdue) section at end or each day
+*** TODO Update Project Saturday [0%]
+DEADLINE: <2023-12-09 Sat> SCHEDULED: <2023-12-09 Sat>
+1. [ ] Review all tasks and update completion status for all tasks as necessary
+    at the end of each day
+2. [ ] Move all projects to appear under correct
+   deadline (i.e. first deadline, overdue) section at end or each day
+*** TODO Update Project Sunday [0%]
+DEADLINE: <2023-12-10 Sun> SCHEDULED: <2023-12-10 Sun>
+1. [ ] Review all tasks and update completion status for all tasks as necessary
+    at the end of each day
+2. [ ] Move all projects to appear under correct
+   deadline (i.e. first deadline, overdue) section at end or each day
+*** TODO Update Project Monday [0%]
+DEADLINE: <2023-12-12 Tue> SCHEDULED: <2023-12-11 Mon>
+1. [ ] Review all tasks and update completion status for all tasks as necessary
+    at the end of each day
+2. [ ] Move all projects to appear under correct
+   deadline (i.e. first deadline, overdue) section at end or each day

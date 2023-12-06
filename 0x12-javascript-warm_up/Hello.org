@@ -1,9 +1,9 @@
 * First Heading
   Contents and *details*
 ** Sub-Heading
-   Sub-heading contents\
-   Orgmode allows for richtext editing and markup, the formatting\
-   is retained when the org document content is exported to another\
+   Sub-heading contents
+   Org Mode allows for richtext editing and markup, the formatting
+   is retained when the org document content is exported to another
    document such as a HTML.
 
    | Name      | Age | Uses Emacs |
@@ -37,5 +37,3 @@
    (message "Hello!"))
 
   #+end_src
-
-*
