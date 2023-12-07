@@ -37,7 +37,7 @@ DEADLINE: <2023-12-08 Fri> SCHEDULED: <2023-12-10 Sun>
 ***** TODO 0x0F. Python - Object-relational mapping [%]			:alx:
 DEADLINE: <2023-11-20 Mon> SCHEDULED: <2023-12-10 Sun>
 ****** Tasks [%]
-******* TODO Mandatory Tasks [11%]
+******* TODO Mandatory Tasks [27%]
 1. [X] Review Resources [100%]
    - [X] [[https://www.fullstackpython.com/object-relational-mappers-orms.html][Full Stack Python - Object Relational Mappers]]
    - [X] [[https://mysqlclient.readthedocs.io/][mysqlclient/MySQLdb documentation]]
@@ -51,36 +51,36 @@ DEADLINE: <2023-11-20 Mon> SCHEDULED: <2023-12-10 Sun>
    - [X] [[https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/][SQLAlchemy ORM Tutorial for Python Developers]]
    - [X] [[https://overiq.com/sqlalchemy-101/][SQLAlchemy Tutorial]]
    - [X] [[https://realpython.com/python-virtual-environments-a-primer/][Python Virtual Environments: A primer]]
-2. [ ] Create Repo and README file [0%]
-   - [ ] Create Github repo/folder
-   - [ ] Create and upload README.md to project repo/folder
+2. [X] Create Repo and README file [100%]
+   - [X] Create Github repo/folder
+   - [X] Create and upload README.md to project repo/folder
 3. [X] Technical requirements [100%]
    - [X] Install and activate python venv
    - [X] Install MySQL 8.0
    - [X] Install MySQLdb module v2.0.x
    - [X] Install SQLAlchemy module version 1.4.x
-4. [ ] Write a script that lists all states from the database hbtn_0e_0_usa [0%]
-   - [ ] script should take 3 arguments: mysql username,
+4. [X] Write a script that lists all states from the database hbtn_0e_0_usa [100%]
+   - [X] script should take 3 arguments: mysql username,
      mysql password and database name
-   - [ ] Import MySQLdb
-   - [ ] script should connect to a MySQL server running on localhost
+   - [X] Import MySQLdb
+   - [X] script should connect to a MySQL server running on localhost
      at port 3306
-   - [ ] Results must be sorted in ascending order by states.id
-   - [ ] Code should not be executed when imported
-   - [ ] file 0-select_states.py
-5. [ ] Write a script that lists all states with a name starting with N
-   from the database hbtn_0e_0_usa [0%]
-   - [ ] script should take 3 arguments: mysql username,
+   - [X] Results must be sorted in ascending order by states.id
+   - [X] Code should not be executed when imported
+   - [X] file 0-select_states.py
+5. [-] Write a script that lists all states with a name starting with N
+   from the database hbtn_0e_0_usa [83%]
+   - [X] script should take 3 arguments: mysql username,
      mysql password and database name
-   - [ ] Import MySQLdb
-   - [ ] script should connect to a MySQL server running on localhost
+   - [X] Import MySQLdb
+   - [X] script should connect to a MySQL server running on localhost
      at port 3306
-   - [ ] Results must be sorted in ascending order by states.id
-   - [ ] Code should not be executed when imported
+   - [X] Results must be sorted in ascending order by states.id
+   - [X] Code should not be executed when imported
    - [ ] file 1-filter_states.py
 6. [ ] Write a script that takes in an argument and displays all values
    in the states table of hbtn_0e_0_usa where name matches the argument.
-7. [ ] write a script that takes in arguments and displays all values in the
+7. [X] write a script that takes in arguments and displays all values in the
    states table of hbtn_0e_0_usa where name matches the argument.
    But this time, write one that is safe from MySQL injections!
 8. [ ] Write a script that lists all cities from the database hbtn_0e_4_usa
