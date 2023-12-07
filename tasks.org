@@ -34,10 +34,10 @@ DEADLINE: <2023-12-08 Fri> SCHEDULED: <2023-12-10 Sun>
 *** Overdue
 **** Second Deadline
 **** Third Deadline
-***** TODO 0x0F. Python - Object-relational mapping [%]
+***** TODO 0x0F. Python - Object-relational mapping [%]			:alx:
 DEADLINE: <2023-11-20 Mon> SCHEDULED: <2023-12-10 Sun>
 ****** Tasks [%]
-******* TODO Mandatory Tasks [5%]
+******* TODO Mandatory Tasks [11%]
 1. [X] Review Resources [100%]
    - [X] [[https://www.fullstackpython.com/object-relational-mappers-orms.html][Full Stack Python - Object Relational Mappers]]
    - [X] [[https://mysqlclient.readthedocs.io/][mysqlclient/MySQLdb documentation]]
@@ -54,11 +54,11 @@ DEADLINE: <2023-11-20 Mon> SCHEDULED: <2023-12-10 Sun>
 2. [ ] Create Repo and README file [0%]
    - [ ] Create Github repo/folder
    - [ ] Create and upload README.md to project repo/folder
-3. [ ] Technical requirements [0%]
-   - [ ] Install and activate python venv
-   - [ ] Install MySQL 8.0
-   - [ ] Install MySQLdb module v2.0.x
-   - [ ] Install SQLAlchemy module version 1.4.x
+3. [X] Technical requirements [100%]
+   - [X] Install and activate python venv
+   - [X] Install MySQL 8.0
+   - [X] Install MySQLdb module v2.0.x
+   - [X] Install SQLAlchemy module version 1.4.x
 4. [ ] Write a script that lists all states from the database hbtn_0e_0_usa [0%]
    - [ ] script should take 3 arguments: mysql username,
      mysql password and database name
