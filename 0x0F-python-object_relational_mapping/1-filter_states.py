@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 lists all states with a name starting with N
 """
@@ -26,7 +25,8 @@ if __name__ == '__main__':
                                    charset='utf8')
     dbcursor = dbconnection.cursor()
     dbcursor.execute("SELECT * FROM states " +
-                     "WHERE name LIKE 'N%' ORDER BY id ASC")
+                     "WHERE name COLLATE utf8mb4_bin " +
+                     "LIKE 'N%' ORDER BY id ASC")
     query_rows = dbcursor.fetchall()
     for each_row in query_rows:
         print(each_row)

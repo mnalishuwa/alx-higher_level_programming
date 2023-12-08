@@ -30,3 +30,12 @@ if __name__ == '__main__':
         print(each_row)
     dbcursor.close()
     dbconnection.close()
+    # Consider refactoring to use pagination to handle cases
+    # where the results dataset is large, see snippet below
+    # batch_size = 1000
+    # while True:
+    #     rows = cursor.fetchmany(batch_size)
+    #     if not rows:
+    #         break
+    #     for row in rows:
+    #         # Process the row
