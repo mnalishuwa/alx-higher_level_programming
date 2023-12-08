@@ -43,6 +43,8 @@ if __name__ == '__main__':
             print(query_rows[row][0], end=", ")
         else:
             print(query_rows[row][0])
+    if not rows:
+        print()
 
     dbcursor.close()
     dbconnection.close()
