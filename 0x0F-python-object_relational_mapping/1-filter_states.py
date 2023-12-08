@@ -27,6 +27,7 @@ if __name__ == '__main__':
     dbcursor.execute("SELECT * FROM states " +
                      "WHERE name COLLATE utf8mb4_bin " +
                      "LIKE 'N%' ORDER BY id ASC")
+    # Query above uses collation to handle case sensitivity
     query_rows = dbcursor.fetchall()
     for each_row in query_rows:
         print(each_row)

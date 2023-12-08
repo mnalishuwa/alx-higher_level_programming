@@ -27,7 +27,9 @@ if __name__ == '__main__':
                                    charset='utf8')
     dbcursor = dbconnection.cursor()
     dbcursor.execute("SELECT * FROM states " +
-                     "WHERE name = '{}' ORDER BY id ASC".format(state_name))
+                     "WHERE name COLLATE utf8mb4_bin = " +
+                     "'{}' ORDER BY id ASC".format(state_name))
+    # COLLATE name to ensure case sensitivity during comparison
     query_rows = dbcursor.fetchall()
     for each_row in query_rows:
         print(each_row)
