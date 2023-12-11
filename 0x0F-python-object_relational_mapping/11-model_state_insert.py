@@ -14,7 +14,7 @@ if __name__ == "__main__":
     """
     from model_state import State
     from sqlalchemy import create_engine
-    from sqlalchemy.orm import sessionmaker, Query
+    from sqlalchemy.orm import sessionmaker
     import sys
     from urllib.parse import quote_plus
 
@@ -37,5 +37,7 @@ if __name__ == "__main__":
     new_state = State("Louisiana")
     session.add(new_state)
     session.commit()
+
+    print("{:d}".format(new_state.id))
 
     session.close()
