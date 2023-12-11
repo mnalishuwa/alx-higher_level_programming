@@ -15,11 +15,14 @@ model_state module:
             creates the class when called
 """
 
+
 from sqlalchemy import Column,  create_engine, Integer, Sequence, String
 from sqlalchemy.ext.declarative import declarative_base
 import sys
 
+
 Base = declarative_base()
+
 
 class State(Base):
     """
@@ -30,11 +33,12 @@ class State(Base):
     Methods:
 
     """
+
     __tablename__ = "states"
     id = Column(Integer,
-        Sequence("state_id_seq"),
-        primary_key=True,
-        nullable=False, unique=True)
+                Sequence("state_id_seq"),
+                primary_key=True,
+                nullable=False, unique=True)
 
     name = Column(String(128), nullable=False)
 
