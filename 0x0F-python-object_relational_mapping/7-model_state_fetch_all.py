@@ -28,10 +28,16 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
     portnumber = 3306
 
-    dbengine = create_engine("mysql+mysqldb://{}:{}@localhost:{}/{}".format(username, password, portnumber, db_name), pool_pre_ping=True)
+    dbengine = create_engine("mysql+mysqldb://" +
+                             "{}:{}@localhost:{}/{}"
+                             .format(username,
+                                     password,
+                                     portnumber,
+                                     db_name),
+                             pool_pre_ping=True)
     # Base.metadata.create_all(dbengine)
     Session = sessionmaker(bind=dbengine)
     session = Session()
     for state in session.query(State).order_by(State.id).all():
-        print("{}: {}".format(state.id,state.name))
+        print("{:d}: {:s}".format(state.id,state.name))
     session.close()
