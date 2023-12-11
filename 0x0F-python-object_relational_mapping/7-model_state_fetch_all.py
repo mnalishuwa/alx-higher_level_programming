@@ -8,16 +8,11 @@ select all states
 """
 
 
-# from sqlalchemy import Column,  create_engine, Integer, Sequence, String
-# from sqlalchemy.ext.declarative import declarative_base
-# import sys
-
-
 if __name__ == "__main__":
     """
     Fetch all states from named database
     """
-    from model_state import Base, State
+    from model_state import State
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
     import sys
@@ -39,5 +34,5 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=dbengine)
     session = Session()
     for state in session.query(State).order_by(State.id).all():
-        print("{:d}: {:s}".format(state.id,state.name))
+        print("{:d}: {:s}".format(state.id, state.name))
     session.close()
