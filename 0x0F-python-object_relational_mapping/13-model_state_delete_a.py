@@ -35,7 +35,7 @@ if __name__ == "__main__":
     session = Session()
 
     session.query(State).\
-        filter(State.name.like("%a%")).delete(synchronize_session=False)
+        filter(State.name.like("%a%")).delete(synchronize_session=True)
     session.commit()
 
     session.close()
