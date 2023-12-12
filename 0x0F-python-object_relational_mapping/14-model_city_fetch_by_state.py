@@ -28,7 +28,7 @@ if __name__ == "__main__":
                                     dbname),
                              pool_pre_ping=True)
     Base.metadata.create_all(dbengine)
-    
+
     Session = sessionmaker(bind=dbengine)
     session = Session()
 
