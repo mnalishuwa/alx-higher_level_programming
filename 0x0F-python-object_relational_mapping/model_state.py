@@ -20,6 +20,8 @@ from sqlalchemy import Column,  create_engine, Integer, Sequence, String
 from sqlalchemy.ext.declarative import declarative_base
 import sys
 
+from sqlalchemy.orm import relationship
+
 
 Base = declarative_base()
 
@@ -41,6 +43,7 @@ class State(Base):
                 nullable=False, unique=True)
 
     name = Column(String(128), nullable=False)
+    state_cities = relationship("City", back_populates="state")
 
     def __init__(self, name):
         """
