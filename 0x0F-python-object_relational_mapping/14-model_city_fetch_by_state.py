@@ -9,7 +9,7 @@ if __name__ == "__main__":
     Import required packages and query the cities table
     """
     from model_city import City
-    from model_state import State
+    from model_state import Base, State
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
     import sys
@@ -27,7 +27,8 @@ if __name__ == "__main__":
                                     portnumber,
                                     dbname),
                              pool_pre_ping=True)
-
+    Base.metadata.create_all(dbengine)
+    
     Session = sessionmaker(bind=dbengine)
     session = Session()
 
