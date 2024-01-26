@@ -1,0 +1,6 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 18 Oct 2009 13:19:15 GMT
+Server: Apache/2.2.14 (Win32)
+Location: http://127.0.0.1:8000/testdir/
+Content-Length: 238
+Content-Type: text/html; charset=iso-8859-1
